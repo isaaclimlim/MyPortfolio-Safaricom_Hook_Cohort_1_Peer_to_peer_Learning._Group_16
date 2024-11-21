@@ -29,6 +29,7 @@ body {
     background-color: var(--bg-color);
 }
 
+/* Header and navigation links */
 header {
     position: fixed;
     top: 0;
@@ -64,3 +65,64 @@ header {
 .navlinks a:hover {
     color: var(--main-color);
 }
+
+/* Hero section */
+section {
+    padding: 120px 19% 100px;
+}
+
+.home {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background: url(../jpg-files/PROFILE\ PICTURE\ copy.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero h3 {
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    word-spacing: 10px;
+}
+
+.hero h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: var(--h1-font);
+    color: var(--text-color);
+    font-weight: 100;
+    margin-bottom: 10px;
+    word-spacing: 25px;
+}
+
+.hero h4 {
+    color: var(--second-color);
+    font-size: 25px;
+    font-weight: 600;
+    word-spacing: 15px;
+    border-bottom: 3.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 16px 45px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: var(--p-font);
+    margin-top: 1rem;
+    font-weight: 600;
+    border: 1px solidvar(--main-color;
+    transition: all ease .50s;
+}
+
+.btn:hover {
+    transform: translateX(5px);
+    background: transparent;
+    border: 1px solidvar(--main-color;
+}
+
