@@ -359,4 +359,25 @@ body {
       .about-text {
         padding: 10px;
       }
+
+      /* Interests section styling */
+      #interests {
+        padding: 30px 15px;
+      }
+    
+      #interests h2 {
+        font-size: 1.8rem;
+      }
+    
+      #interests h5 {
+        font-size: 1rem;
+      }
+    
+      #interests .description ol {
+        padding-left: 10px;
+      }
+    
+      #interests .para p {
+        font-size: 0.9rem;
+      }
     }
