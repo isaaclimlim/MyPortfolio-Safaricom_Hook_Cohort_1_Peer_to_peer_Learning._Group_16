@@ -9,152 +9,89 @@
     scroll-behavior: smooth;
     border: none;
     outline: none;
+
 }
 
-:root {
-    --bg-color: #191919;
-    --secont-color: #101010;
-    --main-color: #e9204f;
-    --text-color: #fff;
-    --second-color: #e4e4e4;
-    --other-color: #c6c9d8bf;
-
-    --h1-font: 7rem;
-    --h2-font: 3.5rem;
-    --p-font: 1.1rem;
-}
-
-body {
-    color: var(--text-color);
-    background-color: var(--bg-color);
-}
-
-/* Header and navigation links */
-header {
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1000;
-    width: 100%;
+/* Header section */
+.header {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    background: transparent;
-    padding: 28px 11%;
-    border-bottom: 1px solid transparent;
-    transition: all ease 0.5s;
-}
-
-.logo a {
-    width: 100%;
-    height: auto;
-}
-
-.navlinks {
-    display: flex;
-}
-
-.navlinks a {
-    color: var(--second-color);
-    font-size: var(--p-font);
-    font-weight: 600px;
-    margin: 0 40px;
-    transition: all-ease .40s;
-}
-
-.navlinks a:hover {
-    color: var(--main-color);
-}
-
-/* Hero section */
-section {
-    padding: 120px 19% 100px;
-}
-
-.home {
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-    background: url(../jpg-files/PROFILE\ PICTURE\ copy.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
-}
+    padding: 15px 20px;
+    background: linear-gradient(to right, #3f51b5, #2196f3);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
 
-.hero h3 {
-    color: var(--second-color);
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    word-spacing: 10px;
-}
+  /* logo styling */
+  .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    margin-left: 50px;
+  }
 
-.hero h1 {
-    font-family: 'Dosis', sans-serif;
-    font-size: var(--h1-font);
-    color: var(--text-color);
-    font-weight: 100;
-    margin-bottom: 10px;
-    word-spacing: 25px;
-}
+  .logo a:hover {
+    color: #ffeb3b;
+  }
 
-.hero h4 {
-    color: var(--second-color);
-    font-size: 25px;
-    font-weight: 600;
-    word-spacing: 15px;
-    border-bottom: 3.5rem;
-}
+  /* navigation links styling */
+  .navlinks {
+    display: flex;
+    gap: 40px;
+    margin-right: 50px;
+  }
 
-.btn {
-    display: inline-block;
-    padding: 16px 45px;
-    background-color: var(--main-color);
-    color: var(--text-color);
-    font-size: var(--p-font);
-    margin-top: 1rem;
-    font-weight: 600;
-    border: 1px solidvar(--main-color;
-    transition: all ease .50s;
-}
+  .navlinks li a {
+    font-size: 1rem;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+  }
 
-.btn:hover {
-    transform: translateX(5px);
-    background: transparent;
-    border: 1px solidvar(--main-color;
-}
+  .navlinks li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffeb3b;
+  }
 
-/* About section */
-.about {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    align-items: center;
-    gap: 4rem;
-}
 
-.about-img img {
-    width: 100%;
-    height: auto;
-}
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .navlinks {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: rgba(0, 0, 0, 0.8);
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
 
-.about-text h2 {
-    font-family: 'Dosis', sans-serif;
-    font-size: var(--h2-font); 
-    font-weight: 800;
-    margin-bottom: 100px;
-}
-
-.about-text h5 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    line-height: 1.4px;
-}
-
-.about-text p {
-    color: var(--other-color);
-    font-size: var(--p-font);
-    line-height: 30px;
-    margin-bottom: 3rem;
+    .navlinks.active {
+        display: flex; /* Show navigation when active */
+      }
+    
+      .navlinks li {
+        text-align: center;
+        margin: 10px 0;
+      }
+    
+      .header {
+        padding: 10px 15px;
+      }
+    
+      .logo a {
+        font-size: 1.5rem;
+      }
 }
