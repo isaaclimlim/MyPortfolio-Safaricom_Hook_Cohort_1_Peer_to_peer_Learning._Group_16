@@ -473,6 +473,25 @@ body {
   outline: none;
 }
 
+.cta-form {
+  display: inline-block;
+  background-color: #007bff; /* Blue color for the button */
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: 1rem;
+}
+
+.cta-form:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05); /* Slightly enlarges on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
+}
   
 
 
