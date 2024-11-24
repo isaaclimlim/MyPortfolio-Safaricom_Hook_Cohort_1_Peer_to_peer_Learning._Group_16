@@ -22,14 +22,14 @@ body {
 }
 
 /* Header section */
-.header {
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
     background: linear-gradient(to right, #3f51b5, #2196f3);
     color: white;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -52,16 +52,23 @@ body {
 
   /* navigation links styling */
   .navlinks {
-    display: flex;
+    display: none;
     gap: 40px;
     margin-right: 50px;
+    flex-direction: column;
+    position: absolute;
+    background: #444;
+    padding: 10px;
+    top: 50px;
+    right: 10px;
+    z-index: 100;
   }
 
   .navlinks li a {
     font-size: 1rem;
     color: white;
-    padding: 8px 12px;
-    border-radius: 4px;
+    padding: 10px;
+    border-radius: 5px;
     transition: all 0.3s ease;
     
   }
@@ -70,6 +77,33 @@ body {
     background: rgba(255, 255, 255, 0.2);
     color: #ffeb3b;
   }
+
+  /* Hide the checkbox */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Label styles (Menu Icon) */
+ .menu-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Show menu when the checkbox is checked */
+ .menu-toggle:checked ~ .navlinks {
+  display: flex;
+}
+
+/* Close menu when a link is clicked */
+.navlinks a {
+  display: block;
+}
+
+.navlinks a:active {
+  /* Add transition effect or styling if needed */
+  background-color: #222;
+}
 
   /* Hero section styling */
   .home {
@@ -339,7 +373,7 @@ body {
 
 .project h2 {
   font-size: 2rem;
-  color: #333;
+  color: #ff7f50;
   margin-bottom: 20px;
   position: relative;
 }
@@ -457,7 +491,7 @@ body {
 
 .cta-form {
   display: inline-block;
-  background-color: #007bff; /* Blue color for the button */
+  background-color: #ff7f50; /* Blue color for the button */
   color: #fff;
   padding: 0.8rem 1.5rem;
   border: none;
@@ -470,7 +504,7 @@ body {
 }
 
 .cta-form:hover {
-  background-color: #0056b3; /* Darker blue */
+  background-color: #333; /* Darker blue */
   transform: scale(1.05); /* Slightly enlarges on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
 }
@@ -520,7 +554,7 @@ body {
 
 
   /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 768px) (min-width: 769px)  {
     .navlinks {
       display: flex;
       justify-content: center;
@@ -550,6 +584,22 @@ body {
       .logo a {
         font-size: 1.5rem;
       }
+
+      .menu {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+        padding: 0;
+      }
+    
+      .menu-icon {
+        display: none;
+      }
+
+
+
+
 
       /* Hero section styling */
       .home {
