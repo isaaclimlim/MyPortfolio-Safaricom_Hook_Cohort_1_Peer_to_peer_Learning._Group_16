@@ -219,6 +219,11 @@ body {
     color: #ff7f50;
     margin-bottom: 10px;
   }
+
+  .about-text h2:hover {
+    color: #388e3c;
+    cursor: pointer;
+  }
   
   .about-text p {
     margin-bottom: 20px;
@@ -267,7 +272,7 @@ body {
   #interests h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    color: #4caf50;
+    color:  #ff7f50;
     text-align: center;
     transition: color 0.4s ease;
   }
@@ -277,7 +282,7 @@ body {
     cursor: pointer;
   }
 
-  #interests h5 {
+  #interests p {
     font-size: 1.2rem;
     font-weight: normal;
     color: #666;
