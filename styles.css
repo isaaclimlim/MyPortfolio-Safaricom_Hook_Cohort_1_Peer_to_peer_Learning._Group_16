@@ -109,6 +109,48 @@ body {
     margin-bottom: 20px;
   }
 
+  .hero .icon-container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+
+  .hero .icon-container .icon {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .hero .icon-container .icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .hero .icon-container .icon.html {
+    background: #e44d26; /* HTML orange */
+}
+
+.hero .icon-container .icon.css {
+    background: #1572b6; /* CSS blue */
+}
+
+.hero .icon-container .icon.python {
+    background: linear-gradient(135deg, #3776ab, #ffd343); /* Python blue and yellow */
+}
+
   .hero .btn {
     display: inline-block;
     background: #ff7f50;
@@ -307,6 +349,12 @@ body {
   text-align: center;
 }
 
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
 .project h2 {
   font-size: 2rem;
   color: #333;
@@ -334,7 +382,8 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   max-width: 400px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+  }
+
 
 .project1:hover {
   transform: translateY(-10px);
@@ -464,3 +513,4 @@ body {
         font-size: 0.9rem;
       }
     }
+
