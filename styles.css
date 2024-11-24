@@ -414,6 +414,65 @@ body {
   color: #666;
   line-height: 1.5;
 }
+
+/* Contact Section Styling */
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  min-height: 100vh;
+}
+
+
+.call {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 90%;
+  max-width: 400px;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.call:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.call h4 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.call label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.call input,
+.call textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.call input:focus,
+.call textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.5);
+  outline: none;
+}
+
   
 
 
