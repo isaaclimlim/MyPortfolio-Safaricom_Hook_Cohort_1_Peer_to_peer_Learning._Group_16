@@ -492,6 +492,48 @@ body {
   transform: scale(1.05); /* Slightly enlarges on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adds depth on hover */
 }
+
+/* Footer Styling */
+.footer {
+  background-color: #282c34; 
+  color: #ffffff; 
+  text-align: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+}
+
+.nav-links li {
+  margin: 10px 15px; /* Space between links */
+}
+
+.links, .nav-links a {
+  text-decoration: none;
+  color: #61dafb; /* Light blue color for links */
+  font-weight: bold;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease; /* Playful transitions */
+}
+
+.links:hover, .nav-links a:hover {
+  color: #ffffff; /* Change to white on hover */
+  transform: scale(1.2); /* Enlarge link slightly */
+}
+
   
 
 
